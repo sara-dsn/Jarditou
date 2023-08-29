@@ -11,21 +11,19 @@
 <nav>Tableau</nav>
 <nav>Contact</nav>
 <img src="promotion.jpg" alt="image" height="150" width="500"><br>
-</head>
-<body>
     <p>*Ces zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="get">
     <fieldset>
         <legend>Vos coordonnées</legend>
-        <label for="Votre nom*">Votre nom*:</label><input type="texte" name="Votre nom*" id="Votre nom*"><br>
-        <label for="Votre prénom*">Votre prénom*:</label><input type="texte" name="Votre prénom*" id="Votre prénom*"><br>
-        <label for="Sexe*">Sexe*:</label><input type="radio" name="Femme" value="Féminin">Féminin</iunput>
-        <input type="radio" name="Homme"  value="Masculin"></iunput>Masculin<br>
+        <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom"><br>
+        <label for="prénom">Votre prénom*:</label><input type="text" name="prénom" id="prénom"><br>
+        <label for="Sexe">Sexe*:</label><input type="radio" name="Femme" value="Féminin">Féminin
+        <input type="radio" name="Homme"  value="Masculin">Masculin<br>
         <label for="date">Date de naissance*:</label><input type="date" id="date"><br>
-        <label for="name">Code postal*:</label><input type="texte" name="name" id="name"><br>
-        <label for="nom">Adresse:</label><input type="texte" name="name" id="name"></input><br>
-        <label for="nom">Ville:</label><input type="texte" name="name" id="name"></input><br>
-        <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30" value="sara@afpa.fr"></input><br>
+        <label for="postal">Code postal*:</label><input type="text" name="postal" id="postal"><br>
+        <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse"><br>
+        <label for="ville">Ville:</label><input type="text" name="ville" id="ville"><br>
+        <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30" value="sara@afpa.fr"><br>
     </fieldset>
     <fieldset>
         <legend>Votre demande</legend>
@@ -37,11 +35,16 @@
         <option value="Rende-vous">Réclamation</option>
         <option value="Autre ">Autre</option>
     </select><br>
-    <label for="nom">Votre question*:</label><textarea name="commentaire" rows="2" cols="22"></textarea>
+    <label for="question">Votre question*:</label><textarea name="question" rows="2" cols="22"></textarea>
     </fieldset>
-    <input type="radio" value="consentement">*J'accepte le traitement informatique de ce formulaire</input><br>
+    <input type="radio" value="consentement">*J'accepte le traitement informatique de ce formulaire<br>
     <input type="submit" value="Envoyer"/>
     <input type="submit" value="annuler"/>
 </form>
+<footer> 
+<nav>Mention légales</nav>
+        <nav>Horaires</nav>
+        <nav>Plan du site</nav>
+    </footer>
 </body>
 </html>
