@@ -17,7 +17,7 @@
         <legend>Vos coordonnées</legend>
         <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom"><br>
         <label for="prénom">Votre prénom*:</label><input type="text" name="prénom" id="prénom"><br>
-        <label for="Sexe">Sexe*:</label><input type="radio" name="Femme" value="Féminin">Féminin
+        <label for="sexe">Sexe*:</label><input type="radio" name="Femme" id="sexe" value="Féminin">Féminin
         <input type="radio" name="Homme"  value="Masculin">Masculin<br>
         <label for="date">Date de naissance*:</label><input type="date" id="date"><br>
         <label for="postal">Code postal*:</label><input type="text" name="postal" id="postal"><br>
@@ -35,11 +35,11 @@
         <option value="Rende-vous">Réclamation</option>
         <option value="Autre ">Autre</option>
     </select><br>
-    <label for="question">Votre question*:</label><textarea name="question" rows="2" cols="22"></textarea>
+    <label for="informations">Votre question*:</label><textarea name="informations" id="informations" rows="2" cols="22"></textarea>
     </fieldset>
     <input type="radio" value="consentement">*J'accepte le traitement informatique de ce formulaire<br>
-    <input type="submit" value="Envoyer"/>
-    <input type="submit" value="annuler"/>
+    <input type="submit" value="Envoyer">
+    <input type="submit" value="annuler">
 </form>
 <footer> 
 <nav>Mention légales</nav>
