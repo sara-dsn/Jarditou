@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <p>*Ces zones sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="get">
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="Votre nom*">Votre nom*:</label><input type="texte" name="Votre nom*" id="Votre nom*"><br>
+        <label for="Votre prénom*">Votre prénom*:</label><input type="texte" name="Votre prénom*" id="Votre prénom*"><br>
+        <label for="Sexe*">Sexe*:</label><input type="radio" name="Femme" value="Féminin">Féminin</iunput>
+        <input type="radio" name="Homme"  value="Masculin"></iunput>Masculin<br>
+        <label for="date">Date de naissance*:</label><input type="date" id="date"><br>
+        <label for="name">Code postal*:</label><input type="texte" name="name" id="name"><br>
+        <label for="nom">Adresse:</label><input type="texte" name="name" id="name"></input><br>
+        <label for="nom">Ville:</label><input type="texte" name="name" id="name"></input><br>
+        <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30" value="sara@afpa.fr"></input><br>
+    </fieldset>
+    <fieldset>
+        <legend>Votre demande</legend>
+        <label for="sujet">Sujet*:</label>
+        <select id="sujet" size="1">
+        <option value="sujet">Veuillez séléctionner un sujet</option>
+        <option value="inscription">Mes commandes</option>
+        <option value="Renseignement">Question sur un produit</option>
+        <option value="Rende-vous">Réclamation</option>
+        <option value="Autre ">Autre</option>
+    </select><br>
+    <label for="nom">Votre question*:</label><textarea name="commentaire" rows="2" cols="22"></textarea>
+    </fieldset>
+    <input type="radio" value="consentement">*J'accepte le traitement informatique de ce formulaire</input><br>
+    <input type="submit" value="Envoyer"/>
+    <input type="submit" value="annuler"/>
+</form>
+</body>
+</html>
