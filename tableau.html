@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:575px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width:576px)" href="tablette.css">
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="desktop.css">
 </head>
-
 <body>
-    <img src="jarditou_logo.jpg" alt="image" height="90" width="120"><br>
-    <hr>La qualité depuis 70 ans<br>
+    <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo"><h1>Tout le jardin</h1>
     <br>
     <nav>
-        <a href="index.html" title="Acceuil">Acceuil</a><br>
-        <a href="tableau.html" title="Tableau">Tableau</a><br>
-        <a href="formulaire.html" title="Contact">Contact</a><br>
+        <a class="block" href="index.html" title="Acceuil">Acceuil</a>
+        <a class="block" href="tableau.html" title="Tableau">Tableau</a>
+        <a class="block" href="formulaire.html" title="Contact">Contact</a>
     </nav>
-    <img src="promotion.jpg" alt="image" height="150" width="500"><br>
+    <img src="promotion.jpg" alt="promotion.jarditou"><br>
     <table class="tableau-style">
-        <caption><b>Tableau</b></caption>
+        <h2><b>Tableau</b></h2>
         <thead>
             <tr>
                 <th>Photo</th>
@@ -32,7 +32,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="7.jpg" alt="image" height="45" width="45"></td>
+                <td><img class="achat" src="7.jpg" alt="Barbecue.aramis"></td>
                 <td>7</td>
                 <td>Barbecues</td>
                 <td>Aramis</td>
@@ -40,7 +40,7 @@
                 <td>brun</td>
             </tr>
             <tr>
-                <td><img src="8.jpg" alt="image" height="45" width="45"></td>
+                <td><img class="achat" src="8.jpg" alt="barbecue.athos"></td>
                 <td>8</td>
                 <td>Barbecues</td>
                 <td>Athos</td>
@@ -48,7 +48,7 @@
                 <td>Noir</td>
             </tr>
             <tr>
-                <td><img src="11.jpg" alt="image" height="45" width="45"></td>
+                <td><img class="achat" src="11.jpg" alt="Barbecue.claronic"></td>
                 <td>11</td>
                 <td>Barbecues</td>
                 <td>Claronic</td>
@@ -56,7 +56,7 @@
                 <td>Chrome</td>
             </tr>
             <tr>
-                <td><img src="12.jpg" alt="image" height="45" width="45"></td>
+                <td><img class="achat" src="12.jpg" alt="Barbecue.de.camping"></td>
                 <td>12</td>
                 <td>Barbecues</td>
                 <td>Camping</td>
@@ -64,7 +64,7 @@
                 <td>Noir</td>
             </tr>
             <tr>
-                <td><img src="13.jpg" alt="image" height="45" width="45"></td>
+                <td><img class="achat" src="13.jpg" alt="Brouette"></td>
                 <td>13</td>
                 <td>Brouette</td>
                 <td>Green</td>
@@ -74,11 +74,9 @@
         </tbody>
     </table>
     <footer>
-        <nav>
-            <a href="index.html" title="Acceuil">Acceuil</a><br>
-            <a href="tableau.html" title="Tableau">Tableau</a><br>
-            <a href="formulaire.html" title="Contact">Contact</a><br>
-        </nav>
+            <a class="block" href="index.html" title="Acceuil">Acceuil</a>
+            <a class="block" href="tableau.html" title="Tableau">Tableau</a>
+            <a class="block" href="formulaire.html" title="Contact">Contact</a>
     </footer>
 </body>
 
