@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
-    <img src="jarditou_logo.jpg" alt="image" height="90" width="120"><br>
-    <hr>La qualité depuis 70 ans<br>
-    <br>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:575px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width:576px)" href="tablette.css">
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="desktop.css">
+</head>
+
+<body>
+    <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo"><h1>Tout le jardin</h1>
     <nav>
-        <a href="index.html" title="Acceuil">Acceuil</a><br>
-        <a href="tableau.html" title="Tableau">Tableau</a><br>
-        <a href="formulaire.html" title="Contact">Contact</a><br>
+        <a class="block" href="index.html" title="Acceuil">Acceuil</a>
+        <a class="block" href="tableau.html" title="Tableau">Tableau</a>
+        <a class="block"  href="formulaire.html" title="Contact">Contact</a>
     </nav>
-    <img src="promotion.jpg" alt="image" height="150" width="500"><br>
+    <img src="promotion.jpg" alt="promotion.jarditou"><br>
     <p>*Ces zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="get">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom"><br>
-            <label for="prénom">Votre prénom*:</label><input type="text" name="prénom" id="prénom"><br>
-            <label for="sexe">Sexe*:</label><input type="radio" name="Femme" id="Femme" value="Féminin">Féminin
-            <input type="radio" name="Homme" value="Masculin" id="Homme">Masculin<br>
+            <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom"><br>
+            <label for="sexe">Sexe*:</label><input type="radio" name="femme" id="femme" value="feminin">Féminin
+            <input type="radio" name="masculin" value="masculin" id="masculin">Masculin<br>
             <label for="date">Date de naissance*:</label><input type="date" id="date"><br>
-            <label for="postal">Code postal*:</label><input type="text" name="postal" id="postal"><br>
+            <label for="cp">Code postal*:</label><input type="text" name="cp" id="cp"><br>
             <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse"><br>
             <label for="ville">Ville:</label><input type="text" name="ville" id="ville"><br>
             <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30"
@@ -34,24 +40,22 @@
             <select id="sujet" size="1">
                 <option value="sujet">Veuillez séléctionner un sujet</option>
                 <option value="inscription">Mes commandes</option>
-                <option value="Renseignement">Question sur un produit</option>
-                <option value="Rende-vous">Réclamation</option>
-                <option value="Autre ">Autre</option>
+                <option value="renseignement">Question sur un produit</option>
+                <option value="rendez-vous">Réclamation</option>
+                <option value="autre">Autre</option>
             </select><br>
             <label for="informations">Votre question*:</label><textarea name="informations" id="informations" rows="2"
                 cols="22"></textarea>
         </fieldset>
         <input type="radio" value="consentement">*J'accepte le traitement informatique de ce formulaire<br>
         <input type="submit" value="Envoyer">
-        <input type="submit" value="annuler">
+        <input type="reset" value="annuler">
     </form>
     <footer>
-        <nav>
-            <a href="index.html" title="Acceuil">Acceuil</a><br>
-            <a href="tableau.html" title="Tableau">Tableau</a><br>
-            <a href="formulaire.html" title="Contact">Contact</a><br>
-        </nav>
+        <a class="block" href="index.html" title="Acceuil">Acceuil</a>
+        <a class="block" href="tableau.html" title="Tableau">Tableau</a>
+        <a class="block" href="formulaire.html" title="Contact">Contact</a>
     </footer>
-    </body>
+</body>
 
 </html>
