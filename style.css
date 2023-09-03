@@ -1,0 +1,36 @@
+img{
+    width:100%;
+    height:auto;
+}
+.jardin{
+    max-width:25%;
+    max-height: 25%;
+}
+.achat{
+    max-width: 40%;
+    max-height:40%;
+}
+html{
+    font-size:100%;
+}
+a{
+    color:white;
+}
+.block{
+display:block;
+background-color: black;
+}
+body{
+    margin-right: auto;
+}
+header{
+    font-size:large;
+}
+h1{
+    font-size: medium;
+    text-align: end;
+    float:right ;
+}
+header{
+    font-size:xx-large;
+}
