@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, srink-to-fit=no">
     <title>Tableau</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:575px)" href="mobile.css">
-    <link rel="stylesheet" media="screen and (max-width:576px)" href="tablette.css">
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="desktop.css">
+    <link class="mobile" rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="tablette.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="desktop.css">
 </head>
+
 <body>
-    <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo"><h1>Tout le jardin</h1>
+    <header>
+        <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo">
+        <p class="titre">Tout le jardin</p>
+    </header>
     <br>
     <nav>
         <a class="block" href="index.html" title="Acceuil">Acceuil</a>
@@ -18,65 +23,69 @@
         <a class="block" href="formulaire.html" title="Contact">Contact</a>
     </nav>
     <img src="promotion.jpg" alt="promotion.jarditou"><br>
-    <table class="tableau-style">
-        <h2><b>Tableau</b></h2>
-        <thead>
-            <tr>
-                <th>Photo</th>
-                <th>ID</th>
-                <th>Catégorie</th>
-                <th>Libellé</th>
-                <th>Prix</th>
-                <th>Couleur</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img class="achat" src="7.jpg" alt="Barbecue.aramis"></td>
-                <td>7</td>
-                <td>Barbecues</td>
-                <td>Aramis</td>
-                <td>110.00€</td>
-                <td>brun</td>
-            </tr>
-            <tr>
-                <td><img class="achat" src="8.jpg" alt="barbecue.athos"></td>
-                <td>8</td>
-                <td>Barbecues</td>
-                <td>Athos</td>
-                <td>249.99€</td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td><img class="achat" src="11.jpg" alt="Barbecue.claronic"></td>
-                <td>11</td>
-                <td>Barbecues</td>
-                <td>Claronic</td>
-                <td>135.90€</td>
-                <td>Chrome</td>
-            </tr>
-            <tr>
-                <td><img class="achat" src="12.jpg" alt="Barbecue.de.camping"></td>
-                <td>12</td>
-                <td>Barbecues</td>
-                <td>Camping</td>
-                <td>88.00€</td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td><img class="achat" src="13.jpg" alt="Brouette"></td>
-                <td>13</td>
-                <td>Brouette</td>
-                <td>Green</td>
-                <td>49.00€</td>
-                <td>Verte</td>
-            </tr>
-        </tbody>
-    </table>
+    
+        <table class="tableau-style">
+            <h1>Tableau</h1>
+            <section>
+                <div class="box" id="un">[COLONNE DROITE]</div>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>ID</th>
+                    <th>Catégorie</th>
+                    <th>Libellé</th>
+                    <th>Prix</th>
+                    <th>Couleur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="achat" src="7.jpg" alt="Barbecue.aramis"></td>
+                    <td>7</td>
+                    <td>Barbecues</td>
+                    <td>Aramis</td>
+                    <td>110.00€</td>
+                    <td>brun</td>
+                </tr>
+                <tr>
+                    <td><img class="achat" src="8.jpg" alt="barbecue.athos"></td>
+                    <td>8</td>
+                    <td>Barbecues</td>
+                    <td>Athos</td>
+                    <td>249.99€</td>
+                    <td>Noir</td>
+                </tr>
+                <tr>
+                    <td><img class="achat" src="11.jpg" alt="Barbecue.claronic"></td>
+                    <td>11</td>
+                    <td>Barbecues</td>
+                    <td>Claronic</td>
+                    <td>135.90€</td>
+                    <td>Chrome</td>
+                </tr>
+                <tr>
+                    <td><img class="achat" src="12.jpg" alt="Barbecue.de.camping"></td>
+                    <td>12</td>
+                    <td>Barbecues</td>
+                    <td>Camping</td>
+                    <td>88.00€</td>
+                    <td>Noir</td>
+                </tr>
+                <tr>
+                    <td><img class="achat" src="13.jpg" alt="Brouette"></td>
+                    <td>13</td>
+                    <td>Brouette</td>
+                    <td>Green</td>
+                    <td>49.00€</td>
+                    <td>Verte</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <footer>
-            <a class="block" href="index.html" title="Acceuil">Acceuil</a>
-            <a class="block" href="tableau.html" title="Tableau">Tableau</a>
-            <a class="block" href="formulaire.html" title="Contact">Contact</a>
+        <a class="block" href="index.html" title="Acceuil">Acceuil</a>
+        <a class="block" href="tableau.html" title="Tableau">Tableau</a>
+        <a class="block" href="formulaire.html" title="Contact">Contact</a>
     </footer>
 </body>
 

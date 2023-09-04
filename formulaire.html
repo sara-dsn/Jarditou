@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, srink-to-fit=no">
     <title>Formulaire</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:575px)" href="mobile.css">
-    <link rel="stylesheet" media="screen and (max-width:576px)" href="tablette.css">
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="desktop.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="tablette.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="desktop.css">
 </head>
 
 <body>
-    <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo"><h1>Tout le jardin</h1>
+    <img class="jardin" src="jarditou_logo.jpg" alt="jarditou_logo"><p class="titre">Tout le jardin</p>
     <nav>
         <a class="block" href="index.html" title="Acceuil">Acceuil</a>
         <a class="block" href="tableau.html" title="Tableau">Tableau</a>
         <a class="block"  href="formulaire.html" title="Contact">Contact</a>
     </nav>
     <img src="promotion.jpg" alt="promotion.jarditou"><br>
+    <section>
+        <div class="box" id="un">[COLONNE DROITE]</div>
     <p>*Ces zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="get">
         <fieldset>
@@ -51,6 +53,7 @@
         <input type="submit" value="Envoyer">
         <input type="reset" value="annuler">
     </form>
+    </section>
     <footer>
         <a class="block" href="index.html" title="Acceuil">Acceuil</a>
         <a class="block" href="tableau.html" title="Tableau">Tableau</a>

@@ -16,38 +16,44 @@ img {
 html {
     font-size: 100%;
 }
-
-a {
-    color: white;
-    display:flex;
+nav {
+    background:black
 }
-
 .block {
-    display: block;
+    display: inline-block;
     background-color: black;
+    color:white;
 }
+
 header {
     font-size: large;
 }
 
-h1 {
-    font-size: medium;
+.titre {
+    font-size: large;
     text-align: end;
     float: right;
+    margin-right: 30%;
 }
 
 header {
     font-size: xx-large;
 }
-
-@media handheld and(max-height:5px) {
-    .a
-}
+@media screen and(max-width:768px) {
+    .box{
+        display:none;
+    }
+} 
 .box{
-    width:50px;
-    height:35px;
-    writing-mode:vertical-rl;
-    background-color: blue;
-    justify-content: end;
-    -ms-flex-direction: column;
+    width:10rem;
+    height: 22.9rem;
+    background-color:silver;
+    float:right;
+
+}
+footer{
+flex-direction:
+}
+.mobile{
+    flex-direction:column;
 }
