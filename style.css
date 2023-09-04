@@ -16,7 +16,7 @@ img {
 html {
     font-size: 100%;
 }
-nav {
+.navig, footer {
     background:black
 }
 .block {
@@ -36,24 +36,24 @@ header {
     margin-right: 30%;
 }
 
-header {
+header{
     font-size: xx-large;
 }
-@media screen and(max-width:768px) {
+@media screen and (max-width:767px) {
+  
+    .block{
+        display: block;
+    }
     .box{
         display:none;
-    }
+        visibility: hidden;
+
 } 
+}
+
 .box{
     width:10rem;
     height: 22.9rem;
     background-color:silver;
     float:right;
-
-}
-footer{
-flex-direction:
-}
-.mobile{
-    flex-direction:column;
 }
