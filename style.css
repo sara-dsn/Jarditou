@@ -1,36 +1,53 @@
-img{
-    width:100%;
-    height:auto;
+img {
+    width: 100%;
+    height: auto;
 }
-.jardin{
-    max-width:25%;
+
+.jardin {
+    max-width: 25%;
     max-height: 25%;
 }
-.achat{
+
+.achat {
     max-width: 40%;
-    max-height:40%;
+    max-height: 40%;
 }
-html{
-    font-size:100%;
+
+html {
+    font-size: 100%;
 }
-a{
-    color:white;
+
+a {
+    color: white;
+    display:flex;
 }
-.block{
-display:block;
-background-color: black;
+
+.block {
+    display: block;
+    background-color: black;
 }
-body{
-    margin-right: auto;
+header {
+    font-size: large;
 }
-header{
-    font-size:large;
-}
-h1{
+
+h1 {
     font-size: medium;
     text-align: end;
-    float:right ;
+    float: right;
 }
-header{
-    font-size:xx-large;
+
+header {
+    font-size: xx-large;
+}
+
+@media handheld and(max-height:5px) {
+    .a
+}
+.box{
+    width:50px;
+    height:35px;
+    writing-mode:vertical-rl;
+    background-color: blue;
+    justify-content: end;
+    -ms-flex-direction: column;
 }
