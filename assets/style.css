@@ -1,3 +1,14 @@
+
+html {
+    font-size: 100%;
+}
+header{
+    font-size: xx-large;
+}
+.navig, footer {
+    background:black
+}
+
 img {
     width: 100%;
     height: auto;
@@ -8,17 +19,14 @@ img {
     max-height: 25%;
 }
 
-.achat {
-    max-width: 40%;
-    max-height: 40%;
+.titre {
+    font-size: large;
+    text-align: end;
+    float: right;
+    margin-right: 30%;
 }
 
-html {
-    font-size: 100%;
-}
-.navig, footer {
-    background:black
-}
+
 .block {
     display: inline-block;
     background-color: black;
@@ -27,20 +35,18 @@ html {
     color:white;
 }
 
-header {
-    font-size: large;
+
+.box{
+    width:10rem;
+    height: 22.9rem;
+    background-color:silver;
+    float:right;
+}
+.achat {
+    max-width: 40%;
+    max-height: 40%;
 }
 
-.titre {
-    font-size: large;
-    text-align: end;
-    float: right;
-    margin-right: 30%;
-}
-
-header{
-    font-size: xx-large;
-}
 @media screen and (max-width:767px) {
   
     .block{
@@ -53,9 +59,3 @@ header{
 } 
 }
 
-.box{
-    width:10rem;
-    height: 22.9rem;
-    background-color:silver;
-    float:right;
-}
