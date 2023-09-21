@@ -2,12 +2,33 @@
 html {
     font-size: 100%;
 }
+
+
 header{
     font-size: xx-large;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
 }
+.titre {
+    font-size: large;
+   display:flex;
+   align-self: center;
+   flex-grow: 1;
+   
+}
+
 .navig, footer {
     background:black
 }
+
+.form {
+    display: flex;
+justify-content: space-between;
+
+}
+
 
 img {
     width: 100%;
@@ -19,12 +40,7 @@ img {
     max-height: 25%;
 }
 
-.titre {
-    font-size: large;
-    text-align: end;
-    float: right;
-    margin-right: 30%;
-}
+
 
 
 .block {
@@ -40,7 +56,6 @@ img {
     width:10rem;
     height: 22.9rem;
     background-color:silver;
-    float:right;
 }
 .achat {
     max-width: 40%;
