@@ -27,38 +27,38 @@
         <div class="box" id="un">[COLONNE DROITE]</div>
         <p>*Ces zones sont obligatoires</p>
         <!-- <form action="http://bienvu.net/script.php" method="get"> -->
-        <form action="destination.php" method="post" id="formulaire">
+        <form action="destination.php" method="post" >
             <fieldset>
                 <legend>Vos coordonnées</legend>
 
                 <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom">
 
-                <div class="alert alert-danger" id="n" style="display:none;">
+                <div class="alert alert-danger" id="n" role="alert" style="display:none;">
                     <strong>Entrez votre nom s.v.p</strong>
 
                 </div><br>
 
 
                 <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom">
-                <div class="alert alert-danger" id="p" style="display:none;">
+                <div class="alert alert-danger" id="p" role="alert" style="display:none;">
                     <strong>Entrez votre prénom s.v.p</strong>
 
                 </div><br>
                 <br>
                 <label for="sexe">Sexe*:</label><input type="radio" name="femme" id="femme" value="femme">Féminin
                 <input type="radio" name="homme" value="homme" id="homme">Masculin
-                <div class="alert alert-danger" id="g" style="display:none;">
+                <div class="alert alert-danger" role="alert" id="g" style="display:none;">
                     <strong>Séléctionnez votre genre s.v.p</strong>
 
                 </div><br>
                 <br>
                 <label for="date">Date de naissance*:</label><input type="date" id="date">
-                <div class="alert alert-danger" id="d" style="display:none;">
+                <div class="alert alert-danger"role="alert" id="d" style="display:none;">
                     <strong>Entrez votre date de naissance s.v.p</strong>
 
                 </div><br>
                 <label for="cp">Code postal*:</label><input type="text" name="cp" id="cp">
-                <div class="alert alert-danger" id="c" style="display:none;">
+                <div class="alert alert-danger" role="alert" id="c" style="display:none;">
                     <strong>Entrez votre code postale s.v.p</strong>
 
                 </div><br>
@@ -69,7 +69,7 @@
                 <label for="ville">Ville:</label><input type="text" name="ville" id="ville">
                <br>
                <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30">
-                <div class="alert alert-danger" id="e" style="display:none;">
+                <div class="alert alert-danger" id="e"role="alert"  style="display:none;">
                     <strong>Entrez votre email s.v.p</strong>
 
                 </div><br>
@@ -84,12 +84,17 @@
                     <option value="question sur un produit">Question sur un produit</option>
                     <option value="réclamation">Réclamation</option>
                     <option value="autre">Autre</option>
-                </select><span id="s_manquant"></span><br>
+                </select><div class="alert alert-danger" id="s"role="alert"  style="display:none;">
+                    <strong>Séléctionnez un sujet s.v.p</strong></div><br>
+
                 <label for="question">Votre question*:</label><textarea name="question" id="question" rows="2"
-                    cols="22"></textarea><span id="q_manquant"></span>
+                    cols="22"></textarea><div class="alert alert-danger" id="q"role="alert"  style="display:none;">
+                        <strong>Entrez votre question s.v.p</strong></div></span>
             </fieldset>
-            <input type="radio" id="ok">*J'accepte le traitement informatique de ce formulaire<span
-                id="o_manquant"></span><br>
+            <input type="radio" id="ok">*J'accepte le traitement informatique de ce formulaire
+            <div class="alert alert-danger" id="o"role="alert"  style="display:none;">
+                <strong>Cochez la case s.v.p</strong></div><br>
+
             <input type="submit" value="Envoyer" id="envoi">
             <input type="reset" value="annuler">
         </form>
