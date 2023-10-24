@@ -10,18 +10,31 @@ $(document).ready(function(){
 function f_valid() {
 var envoi=true;
 
+var nom = $("#nom").val();
+    if(nom===""){
+        envoi=false;
+        $("#n").show();
+        e.preventDefault();
+    }
+    else if(envoi=true){
+        $("#n").hide();
+        document.forms[0].submit();
+    };
+
+
     var prenom = $("#prenom").val();
     if(prenom===""){
         envoi=false;
         $("#p").show();
         e.preventDefault();
     }
-    else{
+    else if(envoi=true){
         $("#p").hide();
         document.forms[0].submit();
     };
 
 
+    
    
     var cp = $("#cp").val();
     if(cp===""){
@@ -29,7 +42,7 @@ var envoi=true;
         $("#c").show();
         e.preventDefault();
     }
-    else{
+    else if(envoi=true){
         $("#c").hide();
         document.forms[0].submit();
     };
@@ -37,63 +50,80 @@ var envoi=true;
    
 
 
-    var email = $("#mail").val();
+    var email = $("#email").val();
     if(email===""){
         envoi=false;
         $("#e").show();
         e.preventDefault();
     }
-    else{
+    else if(envoi=true){
         $("#e").hide();
         document.forms[0].submit();
     };
    
    
     
-    var date = $("#date").val();
+    var date = $("input#date").val();
     if(date===""){
         envoi=false;
         $("#d").show();
         e.preventDefault();
     }
-    else{
+    else if(envoi=true){
         $("#d").hide();
         document.forms[0].submit();
     };
    
 
-    var question = $("#question").val();
+    var question = $("textarea#question").val();
 if(question===""){
-        envoi=false;
-        alert("Entrez votre question s.v.p");
-    }
-  
+    envoi=false;
+    $("#q").show();
+    e.preventDefault();
+}
+else if(envoi=true){
+    $("#q").hide();
+    document.forms[0].submit();
+};
+
    
     var genre=$("input[name='genre']:checked").val();
     if(genre===undefined){
         envoi=false;
-        alert("Veuillez séléctionner votre genre s.v.p");
+        $("#g").show();
+        e.preventDefault();
     }
-   
+    else if(envoi=true){
+        $("#g").hide();
+        document.forms[0].submit();
+    };
+
   
 
-    var sujet=$("input[name='sujet']:checked").val();
-    if(sujet===undefined){
+    var sujet=$("select#sujet").val();
+    if(sujet=="rien"){
         envoi=false;
-        alert("Veuillez séléctionner un sujet s.v.p");
+        $("#s").show();
+        e.preventDefault();
     }
+    else if(envoi=true){
+        $("#s").hide();
+        document.forms[0].submit();
+    };
+
  
    
-    var ok= $("#ok").prop("checked");
+    var ok= $("input#ok").prop("checked");
    if(!ok){
-        envoi=false;
-        alert("cocher la case s.v.p");
-    }
- 
-$(document).ready(function(){
-    $("#formulaire").click(function(e){
-        f_valid();
-    });
-});
+    envoi=false;
+    $("#o").show();
+    e.preventDefault();
+}
+else if(envoi=true){
+    $("#o").hide();
+    document.forms[0].submit();
+};
+
+
 };
 });
