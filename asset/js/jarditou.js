@@ -11,14 +11,15 @@ function f_valid() {
 var envoi=true;
 
 var nom = $("#nom").val();
-    if(nom===""){
+console.log(nom) ;
+   if(nom===""){
         envoi=false;
         $("#n").show();
         e.preventDefault();
     }
     else if(envoi=true){
         $("#n").hide();
-        document.forms[0].submit();
+        
     };
 
 
